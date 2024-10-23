@@ -10,5 +10,4 @@ Execution plan:
 * By the end of week 6, I will create many charts showing the historic performances of teams amd conferences in March Madness
 * By the end of week 7, I will have run regressions on things like seed, power rating, conference stats, etc with the result of games (in this case probably the final score) to see what single metric predicts wins the best
 * By the end of week 8, I will have created a basic neural network that will take in at least 8 of these stats I handpick based on the results above, and attempts to predict the final score.
-
-Finally, I will use this model to predict new games for this upcoming season. Essentially I will run the model twice, once for each time and then see which team had the higher score predicted. I will also use this on a holdout set to validate that the network performs better than random.
+* Finally, I will use this model to predict new games for this upcoming season. Essentially I will run the model twice, once for each time and then see which team had the higher score predicted. I will also use this on a holdout set to validate that the network performs better than random.
