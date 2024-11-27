@@ -1,12 +1,14 @@
 from Seed import Seed
 
 class Team:
-    def __init__(self, team_name, seed: Seed, year, team_stats):
+    def __init__(self, team_name, seed: Seed, conference: Conference, year, team_stats, historical_team_performance):
         
         self.team_name = team_name
         self.seed = seed
+        self.conference = conference
         self.year = year
         self.team_stats = team_stats
+        self.historical_team_performance = historical_team_performance
         
     def get_team_stat(self, stat_name: str):
         
