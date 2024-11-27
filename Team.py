@@ -1,3 +1,4 @@
+from Conference import Conference
 from Seed import Seed
 
 class Team:
