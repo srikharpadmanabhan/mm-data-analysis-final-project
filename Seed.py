@@ -1,5 +1,5 @@
 class Seed:
-    def __init__(self, seed, seed_stats):
+    def __init__(self, seed: int, seed_stats: dict):
         self.seed = seed
         self.seed_stats = seed_stats
         
