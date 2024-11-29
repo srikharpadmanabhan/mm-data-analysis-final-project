@@ -1,11 +1,17 @@
 class Conference:
+    CONFERENCE_FIELDS = ['(Conference) BADJ EM', '(Conference) BADJ O', '(Conference) BADJ D', '(Conference) BARTHAG', '(Conference) G', '(Conference) WIN%', '(Conference) EFG%', '(Conference) EFGD%', '(Conference) FTR', '(Conference) FTRD', '(Conference) TOV%', '(Conference) TOV%D', '(Conference) OREB%', '(Conference) DREB%', '(Conference) OP OREB%', '(Conference) OP DREB%', '(Conference) RAW T', '(Conference) 2PT%', '(Conference) 2PT%D', '(Conference) 3PT%', '(Conference) 3PT%D', '(Conference) BLK%', '(Conference) BLKED%', '(Conference) AST%', '(Conference) OP AST %', '(Conference) 2PTR', '(Conference) 3PTR', '(Conference) 2PTRD', '(Conference) 3PTRD', '(Conference) BADJ T', '(Conference) AVG HGT', '(Conference) EFF HGT', '(Conference) EXP', '(Conference) TALENT', '(Conference) FT%', '(Conference) OP FT%', '(Conference) PPPO', '(Conference) PPPD', '(Conference) ELITE SOS', '(Conference) WAB']
+    
     def __init__(self, conference_name: str, conference_stats):
         self.conference_name = conference_name
-        self.conference_stats = conference_stats
+        self.stats = {}
+        
+        
+        for field in Conference.CONFERENCE_FIELDS:
+            self.stats[field] = conference_stats.get(field,None)
     
     def get_stats_dict(self):
-        return self.conference_stats
+        return self.stats
     
     # Metehod to print conference for debugging
     def __str__(self):
-        return f"Conference(name='{self.conference_name}', stats={self.conference_stats})"
+        return f"Conference(name='{self.conference_name}', stats={self.stats})"

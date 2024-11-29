@@ -46,13 +46,22 @@ class Team:
         
         # print(seed, conference)
         
-    def get_team_stat(self, stat_name: str):
+    def get_all_stats(self):
         
-        if stat_name in self.team_stats:
-            return self.team_stats[stat_name]
-        else:
-            return None
+        name_dict = {
+            "Name": self.team_name
+        }
+        
+        
+        merged_stats = {**name_dict,**self.stats, **self.seed.stats, **self.conference.stats}
+        
+        return merged_stats
+        
+        
     
     def get_seed_stat(self, stat_name: str):
         return self.seed.get_stat(stat_name)
+
+    def __str__(self):
+        return f"{self.team_name} in {self.year} playing in the {self.conference.conference_name} with the following stats: {self.stats}"
         
