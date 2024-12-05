@@ -35,17 +35,9 @@ class Team:
         for field in Team.HISTORIC_TEAM_FIELDS:
             self.stats[field] = historic_team_stats.get(field,None)
         
-        # """
-        # PRETTY PRINT
-        # """
-        # print("self.stats = {\n")
-        # for key in self.stats:
-        #     print(key,":",self.stats[key])
-        
-        # print("}")
-        
-        # print(seed, conference)
-        
+    """
+    This function retrieves all stats for the team including the conference and seed stats. We also add the name of the team 
+    """
     def get_all_stats(self):
         
         name_dict = {
@@ -58,10 +50,12 @@ class Team:
         return merged_stats
         
         
-    
+    # For debugging purposes to ensure that the seed retrieves the right data within the team
     def get_seed_stat(self, stat_name: str):
         return self.seed.get_stat(stat_name)
 
+    # To string function that will allow us to get the stats for a team just by printing it.
+    # Useful for debugging purposes
     def __str__(self):
         return f"{self.team_name} in {self.year} playing in the {self.conference.conference_name} with the following stats: {self.stats}"
         
