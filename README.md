@@ -17,4 +17,4 @@ With all of these numbers, I want to construct charts and other visuals that cou
 
 
 ## Running on your own
-To get the data on your own, go to "https://www.kaggle.com/datasets/nishaanamin/march-madness-data/data" and download the data as a zip. Once unzipped, you should have a folder called "MM Data" with all the csvs inside. Place this 'MM Data' directory inside this repo in the parent directory. Also create the final_data_pickles, saved-models, linear-regression-pngs, csv_files, and pickle_files directories. Then you can follow the video here: , and repeat my process as necessary.
+To get the data on your own, go to "https://www.kaggle.com/datasets/nishaanamin/march-madness-data/data" and download the data as a zip. Once unzipped, you should have a folder called "MM Data" with all the csvs inside. Place this 'MM Data' directory inside this repo in the parent directory. Also create the final_data_pickles, saved-models, linear-regression-pngs, csv_files, and pickle_files directories. Then you can follow the video here: https://studio.youtube.com/video/_bNvDcpLvTE/edit, and repeat my process as necessary.
